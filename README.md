@@ -45,3 +45,24 @@ A full-stack AI-powered hotel guest assistant.
 2. **Backend**: A FastAPI service that receives the chat requests.
 3. **AI Integration**: Uses Google's `google-genai` SDK with Gemini. The model is given a strict system prompt containing the hotel's knowledge base (`app/data/hotel.json`) and a tool for checking availability.
 4. **Availability Tool**: A deterministic Python function (`check_availability`) that Gemini can invoke when a user asks for room availability.
+
+## Backend API Example
+
+You can test the chat endpoint directly using `curl`:
+
+```bash
+curl -X POST http://127.0.0.1:8000/api/chat \
+  -H "Content-Type: application/json" \
+  -d '{"message": "Do you have a pool?", "history": []}'
+```
+
+**Response**:
+```json
+{
+  "reply": "Yes, Oceanview Resort has a swimming pool."
+}
+```
+
+## AI Tools Used
+- **Antigravity AI Assistant**: Used as the primary pair-programming agent to architect, write, and test the full-stack codebase.
+- **Google Gemini 3.1 Pro/Flash-Lite**: The underlying foundation models powering both the development assistant and the hotel chatbot itself.

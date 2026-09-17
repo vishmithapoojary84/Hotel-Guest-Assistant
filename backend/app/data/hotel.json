@@ -1,0 +1,25 @@
+{
+  "hotel_name": "Oceanview Resort",
+  "check_in_time": "3:00 PM",
+  "check_out_time": "11:00 AM",
+  "swimming_pool": true,
+  "breakfast_included": true,
+  "cancellation_policy": "Free cancellation up to 48 hours before check-in.",
+  "rooms": [
+    {
+      "type": "Standard",
+      "capacity": 2,
+      "description": "A comfortable room with a queen bed."
+    },
+    {
+      "type": "Family",
+      "capacity": 4,
+      "description": "Spacious room suitable for up to four guests, featuring two queen beds."
+    },
+    {
+      "type": "Suite",
+      "capacity": 3,
+      "description": "Luxury suite with a king bed and a sofa bed."
+    }
+  ]
+}
